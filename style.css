@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    overflow-x: hidden;
+}
+.navbtn{
+    display: none;
+}
+.main{
+    background-image: url(./img/image.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 100vh;
+    width: 100vw;
+}
+.nav{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.navul{
+    display: flex;
+    width: 45vw;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#navulhi{
+    display: none;
+}
+.navul li:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 20px #CE5937;
+}
+.navlogo{
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+    height: 10vh;
+    width: 20vw;
+}
+.front{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+}
+.lefttxt{
+
+    width: 50vw;
+    display: flex;
+    height: 140%;
+    align-items: center;
+   
+    justify-content:center ;
+   
+}
+.lefttxt h1{
+    position: relative;
+    left: -220px;
+    color: white;
+    height: 80vh;
+    width: 15vw;
+    font-size: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.rightbtn{
+    width: 50vw;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.rightbtn button{
+    background:transparent;
+    border: none;
+    cursor: pointer;
+    width: 99px;
+    height: 90px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+@media only screen and (max-width: 1200px) {
+    .main{
+        background-image: url(./img/image.png);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position-x: -150px;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .lefttxt{
+    
+        width: 50vw;
+        display: flex;
+        height: 140%;
+        align-items: center;
+       position: relative;
+       left: 120px;
+        justify-content:center ;
+       
+    }
+    .navul{
+        display: flex;
+        width: 55vw;
+        justify-content: space-between;
+        list-style-type: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+   
+    
+    }
+
+    @media only screen and (max-width: 925px){
+        .main{
+            background-image: url(./img/image.png);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position-x: -200px;
+            height: 100vh;
+            width: 100vw;
+        }  
+        .navul{
+            display: flex;
+            width: 75vw;
+            justify-content: space-around;
+            overflow-x: hidden;
+            list-style-type: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+      
+        
+    }
+    @media only screen and (max-width: 800px){
+        .main{
+            background-image: url(./img/image.png);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position-x: -250px;
+            height: 100vh;
+            width: 100vw;
+        }
+        .navlogo{
+            position: relative;
+            right: -50px;
+        }
+    }
+    @media only screen and (max-width: 660px){
+        .main{
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+       .rightbtn{
+           position: relative;
+           top: 120px;
+           left: 50px;
+          
+       }
+        .navul{
+            display: none;
+        }
+        .navbtn{
+            display: flex;
+            background-color: transparent;
+            border: none;
+            position: relative;
+            right: 50px;
+            cursor: pointer;
+
+        }
+        
+        #navulhi{
+            list-style-type: none;
+            z-index: 2;
+            position:absolute;
+            background-color:gainsboro;
+            height: 100vh;
+            top: 0px;
+            left:-200px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: ease-in;
+            animation-duration: 1s;
+            
+        }
+        #navulhi li{
+            margin-top: 25px;
+            cursor: pointer;
+            
+        }
+    }
+    @media only screen and (max-width: 550px){
+        .main{
+            background-size: cover;
+            
+        }
+        .lefttxt{
+            position: relative;
+            left: 150px;
+        }
+        .rightbtn{
+            position: relative;
+           bottom: 60px;
+        }
+    }
+    @media only screen and (max-width: 550px){
+        .lefttxt{
+            top: 70px;
+            left: 160px;
+        }
+        .rightbtn{
+            top: 130px;
+            left:30px
+        }
+    }
